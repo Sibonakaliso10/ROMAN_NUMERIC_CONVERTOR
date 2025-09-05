@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ✅ Character encoding and responsive layout setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 🧾 Page title shown in browser tab -->
+  <title>Roman Numeral Converter</title>
+
+  <!-- 🎨 Link to external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- 🧩 Main content area -->
+  <main>
+    <!-- 🧠 App heading -->
+    <h1>Roman Numeral Converter</h1>
+
+    <!-- 🔢 Input field for entering a number -->
+    <label for="number" class="visually-hidden">Enter a number between 1 and 3999</label>
+    <input 
+      id="number" 
+      type="number" 
+      min="1" 
+      max="3999" 
+      placeholder="Enter a number (1–3999)" 
+      aria-label="Number input for Roman numeral conversion"
+    />
+
+    <!-- 🛠️ Button to trigger conversion -->
+    <button id="convert-btn" type="button">Convert</button>
+
+    <!-- 📣 Output area to display the result -->
+    <p id="output" aria-live="polite"></p>
+  </main>
+
+  <!-- 🚀 Link to external JavaScript file for logic -->
+  <script src="script.js"></script>
+</body>
+</html>
